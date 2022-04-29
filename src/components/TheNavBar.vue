@@ -48,6 +48,11 @@ export default {
 
 </script>
 <style scoped>
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
 nav * {
     color: white;
 }
@@ -57,8 +62,8 @@ nav * {
     justify-content: space-between;
     align-items: center;
 
+    padding: 1.5rem 0;
     width: 100%;
-    height: 65px;
 }
 .navbar-nav-desktop {
     display: flex;
@@ -75,8 +80,11 @@ nav * {
     color: white;
 }
 .navbar-logoNav > img {
-    width: 2rem;
+    width: 4rem;
     height: auto;
+}
+.navbar-logoNav > p {
+    font-size: 2rem;
 }
 .burger, .mobile-nav {
     display: none;
