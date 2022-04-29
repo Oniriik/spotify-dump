@@ -10,6 +10,7 @@
     font-family: gothambold;
     color: inherit;
     text-decoration: none;
+    list-style-type: none;
 }
 :root{
     --primary-color: #191414;
