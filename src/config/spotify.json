@@ -1,0 +1,5 @@
+{
+    "REDIRECT_URL":"http://localhost:8080/callback/",
+    "CLIENT_ID":"d64ca4429f4b41c4a1257db9ea1dc94d",
+    "CLIENT_SECRET":"fe85a79091034c4aad34afff0423dfbe"
+}

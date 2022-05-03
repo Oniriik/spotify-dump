@@ -1,0 +1,44 @@
+@font-face {
+    font-family: gothambold;
+    src: url(@/assets/fonts/gothambold1.woff);
+  }
+
+*, *:before, *:after{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gothambold;
+    color: inherit;
+    text-decoration: none;
+    list-style-type: none;
+}
+:root{
+    --primary-color: #191414;
+    --accent-color: #1DB954;
+}
+.wrapper {
+    width: 100%;
+    height: 100%;
+  }
+h1{ 
+    color: white;
+}
+body{
+    background-color: var(--primary-color);
+}
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+@media (max-width: 1000px) {
+  
+    .container {
+        width: 100%;
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 0 2rem;
+  }
+  }
