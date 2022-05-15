@@ -19,6 +19,8 @@
     npm run serve
 # Deploy
     npm run build
+# What did i use ?
+  VueJs v3, Vuex, [Spotify Web API](https://developer.spotify.com/), Axios, Html2Canvas
 # Preview
   Try it ! => https://spotify-dump.xyz/
 ![website preview](https://i.ibb.co/hDb6mdS/homepage.png)
