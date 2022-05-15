@@ -6,7 +6,7 @@
           <router-link :to="{ name: 'home' }" class="navbar-logoNav" @click.prevent="toggleMobileMenu()">
             <img
               class="logo"
-              src="@/assets/img/whiteLogo.png"
+              src="@/assets/img/disc.svg"
               alt="whiteLogo"
               
             />
@@ -59,19 +59,21 @@
       <router-link
         v-if="this.currentPage != 1"
         :to="{ name: 'yourdump' }"
-        class="yourdump"
+        class="yourdump mobile-nav-item"
         @click.prevent="$emit('transitionDirection', this.currentPage,1);toggleMobileMenu()"
         >Your dump</router-link
       >
       <router-link 
         v-if="this.currentPage != 2" 
         :to="{ name: 'faq' }"
+        class="mobile-nav-item"
         @click.prevent="$emit('transitionDirection', this.currentPage,2);toggleMobileMenu()"
         >FAQ</router-link
       >
       <router-link
         v-if="this.currentPage != 3"
         :to="{ name: 'contact' }"
+        class="mobile-nav-item"
         @click.prevent="$emit('transitionDirection', this.currentPage,3);toggleMobileMenu()"
         >Contact</router-link
       >
@@ -96,11 +98,6 @@ export default {
     toggleMobileMenu() {
       this.isMobileShown = !this.isMobileShown;
     },
-  },
-
-  components: {},
-  mouted() {
-    console.log(this.currentPage);
   },
 };
 </script>
@@ -127,8 +124,6 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-
   color: white;
 }
 .navbar-nav-desktop > ul{
@@ -157,12 +152,13 @@ nav {
   flex-direction: row;
   align-items: center;
   gap: 0.5rem;
-
   color: white;
 }
+
 .navbar-logoNav > img {
   width: 2rem;
   height: auto;
+  filter: invert();
 }
 .navbar-logoNav > p {
   font-size: 1.8rem;
@@ -172,6 +168,15 @@ nav {
 }
 .mobile-nav {
   display: none;
+  top: 5rem;
+  color: white;
+  width: 100%;
+}
+.mobile-nav-item{
+  padding: 1rem 2rem;
+  background: #222020;
+  border: 1px solid;
+  border-color: #1e1b1b;
 }
 .burger {
   position: absolute;
@@ -187,6 +192,7 @@ nav {
 .mobile-nav.shown {
   display: block;
 }
+
 @media (max-width: 1000px) {
   .burger {
     display: block;
@@ -195,11 +201,6 @@ nav {
     display: flex;
     flex-direction: column;
     position: absolute;
-
-    top: 5rem;
-    gap: 1rem;
-    margin-left: 2rem;
-    color: white;
   }
   .navbar-nav-desktop {
     display: none;

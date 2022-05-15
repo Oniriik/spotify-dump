@@ -1,0 +1,5 @@
+{
+    "REDIRECT_URL":"https://domain/callback/",
+    "CLIENT_ID":"SPOTIFY_CLIENT_ID",
+    "CLIENT_SECRET":"SPOTIFY_CLIENT_SECRET"
+}

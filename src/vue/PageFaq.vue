@@ -27,7 +27,7 @@
       <div class="question">
         <p class="ask">who are you ?</p>
         <p class="answer">
-          I'm Timothé, a computing student and this is one of my personal project.<br>
+          I'm Timothé, a computing student and this is one of my personal projects.<br>
           My friend Eliza is also helping me with all the artworks ! You can see her works <a href="https://instagram.com/rizedraw" target="_blank">here</a>.
         </p>
       </div>

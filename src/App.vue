@@ -25,7 +25,7 @@ export default {
   methods:{
     transitionDirection(from,to){
     from < to ? this.transition = "fade-in-left" : this.transition = "fade-in-right"
-    console.log(`from : ${from} to : ${to} transition : ${this.transition}`)
+
     document.documentElement.style.overflow = 'hidden'
     setTimeout(()=>{
       to == 2 ? document.documentElement.style.overflowY = 'visible': document.documentElement.style.overflowY = 'hidden'

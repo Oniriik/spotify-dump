@@ -4,13 +4,12 @@
     <div class="text">
         <p class="subtitle">get your monthly</p>
         <p class="pagetitle">spotify dump</p>
-        <router-link :to="{ name: 'auth' }" class="connectBtn">
-          <img src="@/assets/img/darkLogo.png" alt="darkLogo" />
-          <p>Login with Spotify</p>
+        <router-link :to="{ name: 'yourdump' }" class="connectBtn">
+          <p>Now</p>
         </router-link>
     </div>
   </div>
-  <img class="characterImg" src="@/assets/img/girlCharacter.png" alt="IguanaImg">
+  <img class="characterImg" src="@/assets/img/girlCharacter.png" alt="girlimg">
 
   </div>
   
@@ -51,19 +50,15 @@ export default {
 .connectBtn {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 180px;
   height: 35px;
   background-color: var(--accent-color);
   border-radius: 30px;
   margin-top: 5px;
 }
-.connectBtn img {
-  width: 15px;
-  height: auto;
-}
 .connectBtn p {
-  font-size: 0.8em;
+  font-size: 1em;
   color: var(--primary-color);
 }
 .characterImg{

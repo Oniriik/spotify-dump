@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-    <img :src="this.user.images[0].url" alt="avatar">
+    <img v-if="this.user.images.length !=0" :src="this.user.images[0].url" alt="avatar">
     <h1>{{this.user.display_name}}</h1>
     </div>
     
