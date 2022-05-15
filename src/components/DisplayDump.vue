@@ -68,14 +68,15 @@ export default {
 }
 .dump{
   padding: 2rem;
-  background-image: url(@/assets/img/dump.jpg);
-  width: 90%;
+  width: 400px;
   aspect-ratio: 9/16;
+  
+  background-image: url(@/assets/img/dump.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2em;
+  background-position: right;
+  background-position: bottom;
+  
   border-top: solid 1px rgb(67, 67, 67);
   border-bottom:solid 1px rgb(67, 67, 67);
 }
